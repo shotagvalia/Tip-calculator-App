@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./TCreset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tip calculator App</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="splitter">
+        <p><img src="./assets/logo.svg" alt="splitter" /></p>
+      </div>
+
+      <div class="mainCard">
+        <div class="bill">
+          <div class="name">Bill</div>
+
+          <div id="bill-amount">
+            <img id="icon" src="./assets/icon-dollar.svg" alt="dollar" />
+            <input type="number" id="bill-input" placeholder="0" />
+          </div>
+        </div>
+
+        <div class="select-tip">
+          <h3 class="select">Select Tip %</h3>
+
+          <div id="percent">
+            <button class="button0">5%</button>
+            <button class="button0">10%</button>
+            <button class="button0">15%</button>
+            <button class="button0">25%</button>
+            <button class="button0">50%</button>
+            <button class="button1">
+              <input type="number" id="custom-input" placeholder="Custom" />
+            </button>
+          </div>
+        </div>
+
+        <div class="people">
+          <div class="amount">Number of People</div>
+
+          <div class="people-amount">
+            <img id="person" src="./assets/icon-person.svg" alt="person" />
+            <input type="number" id="people-input" placeholder="0" />
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="tip">
+            <div class="para">Tip Amount <br /><span>/ person</span></div>
+
+            <div id="tip-amount">$0.00</div>
+          </div>
+
+          <div class="subtotal">
+            <div class="para">Total <br /><span>/ person</span></div>
+
+            <div id="total-amount">$0.00</div>
+          </div>
+
+          <button id="reset"><div class="button2">RESET</div></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
